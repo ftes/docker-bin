@@ -1,9 +1,4 @@
 FROM ruby:2.6.1
-ARG USER_NAME
-ARG USER_UID
-ARG USER_GID
-RUN groupadd --gid $USER_GID $USER_NAME
-RUN useradd --uid $USER_UID --gid $USER_GID $USER_NAME
 
 RUN gem install rails -v 5.1.6
 
